@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Dreamy Gradients
 
-## Getting Started
+A simple an easy way to add background gradients to your webpage.
 
-First, run the development server:
+## Installation
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Install with
+
+```sh
+npm install @muridot0/dreamy-gradients
+yarn add @muridot0/dreamy-gradients
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Usage
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```tsx
+import { DreamyGradient } from '@muridot0/dreamy-gradients'
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+function Demo() {
+  return <DreamyGradient
+          size={{ height: '10rem', width: '10rem' }}
+          color='linear-gradient(180deg, #7D40FF 0%, #F58A25 100%, #7230FF 100%)'
+          position={{ top: '100%', right: '100%' }}
+          blur={2}
+        />
+}
+```
 
-## Learn More
+## Properties
 
-To learn more about Next.js, take a look at the following resources:
+| Name            | Type                     | Default      | Description                                                    |
+| --------------- | ------------------------ | ------------ | -------------------------------------------------------------- |
+| `color`         | RGB, RGBA, HEX, LINEARGRADIENT| - | Sets the color of the gradient. Some out of the box colors are: `red`, `yellow`, `blue`, `green`.|
+| `position`      | {top: string, bottom: string, left: string, right: string} | undefined | Adjusts the vertical and horizontal position of the gradient.|
+| `animate` | 'true', 'false', CSSKeyframes | 'false' | Adds an animation to the gradient. Setting to 'true' adds a default spinning animation to the gradient where as adding a CSSKeyframe object allows you to set your own animation.|
+| `size` | {height: string, width: string} | - | Sets the size of the gradient.|
+| `blur` | number | 1 | Adjusts the blur on the gradient.|
+| `borderRadius` | string | undefined | Adjusts the curvature of the gradient.|
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
