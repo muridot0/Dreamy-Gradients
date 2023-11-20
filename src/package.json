@@ -1,11 +1,14 @@
 {
-  "name": "dreamy-gradients",
+  "name": "@muri/dreamy-gradients",
   "version": "0.1.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "build:components": "rm -rf dist && tsc -p ./tsconfig.json"
   },
   "dependencies": {
     "next": "14.0.3",
@@ -13,12 +16,12 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "styled-components": "^6.1.1",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
     "eslint-config-next": "14.0.3",
-    "styled-components": "^6.1.1",
     "typescript": "^5"
   }
 }

@@ -1,95 +1,71 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import { DreamyGradient } from "@/components";
+
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
+    <main>
+      <DreamyGradient
+        size={{ height: '15rem', width: '15rem' }}
+        color='green'
+        position={{ top: '0%', left: '0%' }}
+        blur={4}
+      />
+      <DreamyGradient
+        size={{ height: '15rem', width: '15rem' }}
+        color='yellow'
+        position={{ top: '0', right: '0' }}
+        blur={4}
+        animate='true'
+      />
+      <DreamyGradient
+        size={{ height: '30rem', width: '30rem' }}
+        color='#F58A25'
+        blur={4}
+        position={{ top: '10%', left: '10%' }}
+        borderRadius='50%'
+      />
+      <DreamyGradient
+        size={{ height: '25rem', width: '25rem' }}
+        color='linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
+        linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
+        linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%)'
+        blur={4}
+        position={{ top: '35%', right: '10%' }}
+        borderRadius='50%'
+      />
+      <div className='container'>
+        <DreamyGradient
+          size={{ height: '10rem', width: '10rem' }}
+          color='linear-gradient(180deg, #7D40FF 0%, #F58A25 100%, #7230FF 100%)'
+          position={{ top: '100%', right: '100%' }}
+          blur={2}
         />
+        <DreamyGradient
+          size={{ height: '30rem', width: '30rem' }}
+          color='linear-gradient(180deg, #42DDFF 0%, rgba(17, 112, 255, 0.46) 100%)'
+          blur={1.5}
+          borderRadius='50%'
+        />
+        <DreamyGradient
+          size={{ height: '15rem', width: '15rem' }}
+          color='linear-gradient(180deg, #F22FB0 0%, #F58A25 100%, #7061A3 100%)'
+          position={{ bottom: '100%', left: '60%' }}
+          blur={4}
+        />
+        <h1>Dreamy Gradients</h1>
       </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <DreamyGradient
+        size={{ height: '15rem', width: '15rem' }}
+        color='red'
+        position={{ bottom: '0', left: '0' }}
+        blur={4}
+      />
+      <DreamyGradient
+        size={{ height: '15rem', width: '15rem' }}
+        color='blue'
+        position={{ bottom: '0', right: '0' }}
+        blur={4}
+      />
     </main>
   )
 }
