@@ -168,7 +168,7 @@ const DreamyGradient: React.FC<DreamyGradientI> = ({
   color,
   animate = 'false',
   size,
-  blur,
+  blur = 1,
   borderRadius
 }) => {
   return (
