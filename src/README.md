@@ -29,6 +29,7 @@ function Demo() {
 ## Properties
 
 | Name            | Type                     | Default      | Description                                                    |
+| --------------- | ------------------------ | ------------ | -------------------------------------------------------------- |
 | `color`         | RGB, RGBA, HEX, LINEARGRADIENT| - | Sets the color of the gradient. Some out of the box colors are: `red`, `yellow`, `blue`, `green`.|
 | `position`      | {top: string, bottom: string, left: string, right: string} | undefined | Adjusts the vertical and horizontal position of the gradient.|
 | `animate` | 'true', 'false', CSSKeyframes | 'false' | Adds an animation to the gradient. Setting to 'true' adds a default spinning animation to the gradient where as adding a CSSKeyframe object allows you to set your own animation.|
