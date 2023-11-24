@@ -2,7 +2,7 @@
 
 A simple an easy way to add background gradients to your webpage.
 
-![Alt text](<dreamy-gradients.png>)
+![Alt text](<src/dreamy-gradients.png>)
 
 ## Installation
 
