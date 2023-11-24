@@ -6,8 +6,6 @@ A simple an easy way to add background gradients to your webpage.
   <img src="https://github.com/muridot0/Dreamy-Gradients/blob/master/public/dreamy-gradients.png" alt="demo" />
 </p>
 
-![Screenshot](<dreamy-gradients.png>)
-
 ## Installation
 
 Install with
