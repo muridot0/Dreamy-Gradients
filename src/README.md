@@ -13,6 +13,8 @@ yarn add @muridot0/dreamy-gradients
 
 ## Usage
 
+![Alt text](<dreamy-gradients.png>)
+
 ```tsx
 import { DreamyGradient } from '@muridot0/dreamy-gradients'
 
