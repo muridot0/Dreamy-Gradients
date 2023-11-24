@@ -2,6 +2,8 @@
 
 A simple an easy way to add background gradients to your webpage.
 
+![Alt text](<dreamy-gradients.png>)
+
 ## Installation
 
 Install with
@@ -12,8 +14,6 @@ yarn add @muridot0/dreamy-gradients
 ```
 
 ## Usage
-
-![Alt text](<dreamy-gradients.png>)
 
 ```tsx
 import { DreamyGradient } from '@muridot0/dreamy-gradients'
