@@ -1,6 +1,6 @@
 # Dreamy Gradients
 
-A simple an easy way to add background gradients to your webpage.
+A simple and easy way to add background gradients to your webpage.
 
 ![Alt text](public/dreamy-gradients.png)
 
