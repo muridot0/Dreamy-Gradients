@@ -26,13 +26,14 @@ interface GradientContainerI {
     left?: string
   }
   $blur: number
+  $zIndex: number
 }
 
 const GradientContainer = styled.div<GradientContainerI>`
   width: ${(props) => props.$size.width};
   height: ${(props) => props.$size.height};
   position: absolute;
-  z-index: -1;
+  z-index: ${(props) => props.$zIndex};
 
   filter: ${(props) => `blur(${props.$blur}rem)`};
 
@@ -159,8 +160,18 @@ interface DreamyGradientI {
    * Sets the size of the gradient.
    */
   size: { height: `${number}${'rem' | 'px' | '%'}`, width: `${number}${'rem' | 'px' | '%'}` }
+  /**
+   * Sets the blur value of the gradient. Default value is 1
+   */
   blur: number
+  /**
+   * Adds a border radius value to the gradient
+   */
   borderRadius?: `${number}${'rem' | 'px' | '%'}`
+  /**
+   * Allows you to control the stacking order of the gradients. Default value is -1
+   */
+  zIndex: number
 }
 
 const DreamyGradient: React.FC<DreamyGradientI> = ({
@@ -169,7 +180,8 @@ const DreamyGradient: React.FC<DreamyGradientI> = ({
   animate = 'false',
   size,
   blur = 1,
-  borderRadius
+  borderRadius,
+  zIndex = -1
 }) => {
   return (
     <GradientContainer
@@ -177,6 +189,7 @@ const DreamyGradient: React.FC<DreamyGradientI> = ({
       $size={size}
       $position={position}
       $animate={animate}
+      $zIndex={zIndex}
     >
       <Gradient $color={color} $size={size} $borderRadius={borderRadius}></Gradient>
     </GradientContainer>
