@@ -171,7 +171,7 @@ interface DreamyGradientI {
   /**
    * Allows you to control the stacking order of the gradients. Default value is -1
    */
-  zIndex: number
+  zIndex?: number
 }
 
 const DreamyGradient: React.FC<DreamyGradientI> = ({

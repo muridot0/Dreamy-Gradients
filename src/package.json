@@ -1,6 +1,6 @@
 {
   "name": "@muridot0/dreamy-gradients",
-  "version": "0.1.36",
+  "version": "0.1.38",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
